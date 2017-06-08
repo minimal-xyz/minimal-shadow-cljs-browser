@@ -1,0 +1,8 @@
+
+{:source-paths ["src"]
+ :dependencies []
+ :builds {:app {:output-dir "target/"
+                :asset-path "."
+                :target :browser
+                :modules {:main {:entries [app.main]}}
+                :devtools {:after-load app.main/on-reload!}}}}
