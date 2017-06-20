@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "shadow-cljs --build app --dev",
-    "once": "shadow-cljs --build app --once",
+    "watch": "shadow-cljs watch app",
+    "compile": "shadow-cljs compile app",
     "html": "mkdir -p target && cp assets/index.html target/",
     "serve": "yarn html && http-server target/",
     "del": "rm -r target/*",
-    "compile": "yarn del && yarn once && yarn html && yarn serve"
+    "build": "yarn compile && yarn html && yarn serve"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.10.0",
-    "shadow-cljs": "^0.9.4"
+    "shadow-cljs": "^0.12.0"
   }
 }
