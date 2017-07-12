@@ -10,7 +10,7 @@ Run in developmeent:
 yarn
 yarn watch
 # another tty
-yarn server # web server on localhost:8080
+yarn serve # web server on localhost:8080
 ```
 
 Compile(without optimizations):
