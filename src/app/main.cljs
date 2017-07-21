@@ -6,8 +6,11 @@
 
 (defonce b 2)
 
-(println "[main]: loading")
+(defn main! []
+  (println "[main]: loading"))
 
-(defn on-reload! []
+(defn reload! []
   (println "[main] reloaded lib:" lib/c lib/d)
   (println "[main] reloaded:" a b))
+
+(main!)
