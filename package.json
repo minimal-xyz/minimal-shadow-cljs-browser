@@ -6,10 +6,11 @@
   "scripts": {
     "watch": "shadow-cljs watch app",
     "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app",
     "html": "mkdir -p target && cp assets/index.html target/",
     "serve": "yarn html && http-server target/",
     "del": "rm -r target/*",
-    "build": "yarn compile && yarn html && yarn serve"
+    "build": "yarn release && yarn html && yarn serve"
   },
   "author": "",
   "license": "MIT",
