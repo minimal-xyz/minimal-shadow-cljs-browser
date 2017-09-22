@@ -8,7 +8,8 @@
     "compile": "shadow-cljs compile app",
     "release": "shadow-cljs release app",
     "html": "mkdir -p target && cp assets/index.html target/",
-    "serve": "yarn html && http-server target/",
+    "serve": "http-server target/",
+    "dev": "yarn html && yarn serve",
     "del": "rm -r target/*",
     "build": "yarn release && yarn html && yarn serve"
   },
@@ -16,6 +17,9 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.10.0",
-    "shadow-cljs": "^0.18.3"
+    "shadow-cljs": "2.x"
+  },
+  "dependencies": {
+    "hsl": "^0.1.1"
   }
 }
