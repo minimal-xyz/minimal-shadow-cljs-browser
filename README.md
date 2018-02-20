@@ -8,7 +8,7 @@ Run in developmeent:
 
 ```bash
 yarn
-yarn html # to copy HTML to target/index.html
+mkdir -p target && cp assets/index.html target/
 yarn shadow-cljs watch app
 ```
 
@@ -30,7 +30,7 @@ Compile with optimizations with `release` sub-command:
 
 ```bash
 yarn shadow-cljs release app
-yarn html
+mkdir -p target && cp assets/index.html target/
 yarn serve # serving target/ on http://localhost:8080
 ```
 
