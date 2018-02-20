@@ -5,4 +5,6 @@
                 :asset-path "."
                 :target :browser
                 :modules {:main {:entries [app.main]}}
-                :devtools {:after-load app.main/reload!}}}}
+                :devtools {:after-load app.main/reload!
+                           :http-root "target"
+                           :http-port 8080}}}}
