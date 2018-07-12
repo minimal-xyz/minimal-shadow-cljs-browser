@@ -8,7 +8,7 @@ Run in developmeent:
 
 ```bash
 yarn
-mkdir -p target && cp assets/index.html target/
+(mkdir -p target && cp assets/index.html target/)
 yarn shadow-cljs watch app
 ```
 
