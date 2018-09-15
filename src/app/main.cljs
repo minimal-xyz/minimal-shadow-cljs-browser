@@ -1,6 +1,6 @@
 
 (ns app.main
-  (:require (app.lib :as lib)))
+  (:require [app.lib :as lib]))
 
 (def a 1)
 
