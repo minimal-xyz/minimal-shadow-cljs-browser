@@ -4,7 +4,7 @@
  :builds {:app {:output-dir "target/"
                 :asset-path "."
                 :target :browser
-                :modules {:main {:entries [app.main]}}
+                :modules {:main {:init-fn app.main/main!}}
                 :devtools {:after-load app.main/reload!
                            :http-root "target"
                            :http-port 8080}}}}
