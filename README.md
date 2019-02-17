@@ -14,7 +14,7 @@ yarn shadow-cljs watch app
 
 `shadow-cljs` will be installed in `node_modules/` when you run `yarn`.
 
-`:http-root` and `:http-port` configs specify that `target/index.html` will be served at http://localhost:8080 .
+`:dev-http` specifies that `target/` will be served at http://localhost:8080 .
 
 ### REPL
 
