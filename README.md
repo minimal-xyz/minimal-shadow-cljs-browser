@@ -4,7 +4,7 @@ Browser demo for [shadow-cljs](https://github.com/thheller/shadow-cljs)
 
 ### Develop
 
-Run in developmeent:
+Run in development:
 
 ```bash
 yarn
