@@ -16,6 +16,6 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.12.3",
-    "shadow-cljs": "^2.8.109"
+    "shadow-cljs": "^2.10.10"
   }
 }
